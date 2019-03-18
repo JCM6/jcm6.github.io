@@ -1,0 +1,302 @@
+<!--
+
+Products Insert
+Contains a set of curated links to support articles and pages with the MINDBODY Core Software.
+
+For any feedback and questions please email jeffrey.moody@mindbodyonline.com
+
+-->
+
+
+<style type="text/css">
+    .settingsColumn{
+    float: left;
+    width: 24%;
+    padding: 5px;
+    height: 50px;
+  }
+  .adminColumn{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    height: 50px;
+  }
+  .calcColumn{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    height: 50px;
+  }
+  .settingsRow:after {
+      content: "";
+      display: table;
+      clear: both;
+      color: white,
+      font-weight:bolder;
+  }
+  .adminTcolumn{
+    background: black;
+    float: left;
+    width: 25%;         
+    padding: 5px;
+
+  }
+  .adminTRow:after{
+      content: "";
+      display: table;
+      clear: both;
+      color: white,
+      font-weight:bolder;  
+  }
+  .tip{
+    font-weight: none;
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  .tip2{
+    font-weight: none;
+    font-size: 8px;
+    text-indent: -2em;
+  }
+  .mblogoStamp{
+    float: left;
+    width: 18%;
+    margin-bottom: 1px;
+
+  }
+  .internaluse{
+    color: red;
+    margin-bottom: 0.25em;
+    font-size: 10px;
+  }
+  .aAlicornLink{
+    text-decoration: none;
+    color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b52b72', endColorstr='#fe8a02',GradientType=1 );
+    transition: all 0.5s ease;
+    font-size: 10px;
+  }
+
+  .resourcebutton{
+    background: none;
+      color: #08c;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b52b72', endColorstr='#fe8a02',GradientType=1 );
+      transition: all .5s ease;
+      text-decoration: none; 
+      border: none;
+      border-radius:;
+      text-align: left;
+      text-anchor: left;
+      font-size: 10px;
+  }
+  .resourcebutton:hover, .resourcebutton:active, .aAlicornLink:hover, .aAlicornLink:active{
+          color: #ec971f;
+          transition: all .5s ease;
+          text-decoration: none;
+          border-radius: ;
+          font-size: 12px;
+          font-weight: bold;    
+  }
+
+  .ulAlicorn {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      font-weight: bold;
+      color: #696C74;
+  }
+
+  .bodyAlicorn{
+
+    min-height: 250px;
+    min-width: 100%;
+
+    background: linear-gradient(to bottom, #fffffe 0, #f2f4f7 100%);
+
+  }
+  .footerAlicorn{
+
+    min-height: 10px;
+    min-width: 100%;
+
+    background: #fe8a02;
+
+  }
+
+  .h2Alicorn{
+    color: #232329;
+    margin-bottom: 0.25em;
+    font-size: 19px;
+  }
+  .h3Alicorn{
+    color: #232329;
+    margin-bottom: 0.25em;
+    font-size: 10px;
+  }
+  .h5Alicorn{
+    color:  #232329;
+    margin-top: 0.25em;
+    margin-left: 5px;
+  }
+  .hrAlicorn { 
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: solid;
+      border-width: 1px;
+      border-color:#FD8F26;
+  }
+
+
+
+  /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f2f4f7; 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: ##f2f4f7; 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #696C74;
+      box-shadow: #696C74;
+  }
+</style>
+<head>
+  <title>Services & Pricing Insert</title>
+</head>
+
+<div class="bodyAlicorn">
+<h3 class="internaluse">    Alicorn MBO Admin Extension - Version: 0.5.6.0 -- INTERNAL USE ONLY</h3>
+
+<div class="settingsRow tbutton" id="Site">
+  <div class="settingsColumn">
+      <ul class="ulAlicorn"> Sales Reports
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/Report/Sales/Sales?category=Sales"><button class="resourcebutton">Sales</button></a>        
+      </li>
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/Report/Sales/SalesByService?category=Sales"><button class="resourcebutton">Sales By Service</button></a>
+      </li>
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/ASP/adm/adm_rpt_returns.asp?category=Sales"><button class="resourcebutton">Returns</button></a>
+      </li>
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/ASP/adm/adm_rpt_sales_voided.asp?category=Sales"><button class="resourcebutton">Voids</button></a>
+      </li>
+      </ul>
+      <h6></h6>     
+      <ul class="ulAlicorn"> Payment Processing
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/ASP/adm/adm_eft_det.asp"><button class="resourcebutton">Autopay Detail</button></a>       
+      </li>
+      <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/BusinessAndConnectLocations"><button class="resourcebutton">Locations and App Listings</button></a>
+      </li>
+      </ul>
+      <h6></h6>     
+  </div>
+  <div class="settingsColumn">
+      <ul class="ulAlicorn"> Clients
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_prod.asp"><button class="resourcebutton">Manage Products</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_contracts_ae.asp"><button class="resourcebutton">Packages</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_promotion.asp"><button class="resourcebutton">Promotions</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/productmanagement/giftcardsummary"><button class="resourcebutton">Gift Cards</button></a>
+        </li>
+      </ul>    
+      <h6></h6>
+      <ul class="ulAlicorn"> Staff
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_prod_cat.asp"><button class="resourcebutton">Product Revenue Categories</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_prod_sub_cat.asp"><button class="resourcebutton">Product Revenue Subcategories</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_prod_sizes.asp"><button class="resourcebutton">Product Sizes</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_prod_colors.asp"><button class="resourcebutton">Product Colors</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/asp/adm/adm_tlbx_prod_sup.asp"><button class="resourcebutton">Suppliers</button></a>
+        </li>
+      </ul>
+  </div>
+  <div class="settingsColumn">
+      <h6></h6>
+      <ul class="ulAlicorn"> Product Reports
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/reportslandingpage/FavoriteReports"><button class="resourcebutton">Reports Landing Page</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/ASP/adm/adm_rpt_inv.asp"><button class="resourcebutton">Inventory on Hand</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/ASP/adm/adm_rpt_inc_inv.asp"><button class="resourcebutton">Inventory Change Log</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/Report/Sales/SalesByItem?category=Inventory"><button class="resourcebutton">Sales by Product</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/ASP/adm/adm_rpt_sales_by_supplier.asp?category=Inventory"><button class="resourcebutton">Sales by Supplier</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/Report/Staff/RetailSalesPerformance/Generate?reportID=undefined"><button class="resourcebutton">Retail Sales Performance</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://clients.mindbodyonline.com/ASP/adm/adm_rpt_sales_cogs.asp?category=Inventory"><button class="resourcebutton">Cost of Goods Sold</button></a>
+        </li>
+      </ul>
+  </div>
+  <div class="settingsColumn">
+      <h6></h6>
+      <ul class="ulAlicorn"> Product Articles
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://support.mindbodyonline.com/s/article/206122977-Classes-How-to-use-Quick-Cash-products-on-the-class-sign-in-sheet?language=en_US"><button class="resourcebutton">Quick Cash Products</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://support.mindbodyonline.com/s/article/ASP-adm-adm-tlbx-premium-service-asp?language=en_US"><button class="resourcebutton">Manage Products</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://support.mindbodyonline.com/s/article/Can-I-change-my-revenue-categories-after-the-fact?language=en_US"><button class="resourcebutton">Can I change my revenue categories after making sales?</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://support.mindbodyonline.com/s/article/204977568-How-to-edit-Products?language=en_US"><button class="resourcebutton">Editing Products & Variants</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://support.mindbodyonline.com/s/article/203260123-Selling-products-online?language=en_US"><button class="resourcebutton">Selling products online</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://support.mindbodyonline.com/s/article/203253873-Inventory-Tickets?language=en_US"><button class="resourcebutton">Inventory Tickets</button></a>
+        </li>
+      </ul>
+      <ul class="ulAlicorn"> Support Resources
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://mindbody.sharepoint.com/sites/PKEKnowledgeCenter"><button class="resourcebutton">PKE Knowledge Center</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://admin.mindbodyonline.com/DBDocumentation"><button class="resourcebutton">DB Documenter</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA00e000000TXD5?srPos=0&srKp=ka0&lang=en_US"><button class="resourcebutton">Team Demo Sites</button></a>
+        </li>
+      </ul>
+  </div>
+</div>
+</div>

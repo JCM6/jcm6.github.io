@@ -1,0 +1,247 @@
+<!--
+
+Branded App Dashboard Insert
+Contains a set of curated links to support articles and resources for the branded app dashboard.
+
+For any feedback and questions please email jeffrey.moody@mindbodyonline.com
+
+-->
+
+
+<style type="text/css">
+  .settingsColumn{
+    float: left;
+    width: 24%;
+    padding: 5px;
+    height: 50px;
+  }
+  .adminColumn{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    height: 50px;
+  }
+  .calcColumn{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    height: 50px;
+  }
+  .settingsRow:after {
+      content: "";
+      display: table;
+      clear: both;
+      color: white,
+      font-weight:bolder;
+  }
+  .adminTcolumn{
+    background: black;
+    float: left;
+    width: 25%;         
+    padding: 5px;
+
+  }
+  .adminTRow:after{
+      content: "";
+      display: table;
+      clear: both;
+      color: white,
+      font-weight:bolder;  
+  }
+  .tip{
+    font-weight: none;
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  .tip2{
+    font-weight: none;
+    font-size: 8px;
+    text-indent: -2em;
+  }
+  .mblogoStamp{
+    float: left;
+    width: 18%;
+    margin-bottom: 1px;
+
+  }
+  .internaluse{
+    color: red;
+    margin-bottom: 0.25em;
+    font-size: 10px;
+  }
+  .aAlicornLink{
+    text-decoration: none;
+    color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b52b72', endColorstr='#fe8a02',GradientType=1 );
+    transition: all 0.5s ease;
+    font-size: 10px;
+  }
+
+  .resourcebutton{
+      background: none;
+      color: #08c;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b52b72', endColorstr='#fe8a02',GradientType=1 );
+      transition: all .5s ease;
+      text-decoration: none; 
+      border: none;
+      border-radius:;
+      text-align: left;
+      text-anchor: left;
+      font-size: 10px;
+  }
+  .resourcebutton:hover, .resourcebutton:active, .aAlicornLink:hover, .aAlicornLink:active{
+        color: #ec971f;
+        transition: all .5s ease;
+        text-decoration: none;
+        border-radius: ;
+        font-size: 12px;
+        font-weight: bold;    
+  }
+
+  .ulAlicorn {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      font-weight: bold;
+      color: #696C74;
+  }
+
+  .bodyAlicorn{
+
+    min-height: 180px;
+    min-width: 100%;
+
+    background: linear-gradient(to bottom, #fffffe 0, #f2f4f7 100%);
+
+  }
+  .footerAlicorn{
+
+    min-height: 10px;
+    min-width: 100%;
+
+    background: #fe8a02;
+
+  }
+
+  .h2Alicorn{
+    color: #232329;
+    margin-bottom: 0.25em;
+    font-size: 19px;
+  }
+  .h3Alicorn{
+    color: #232329;
+    margin-bottom: 0.25em;
+    font-size: 10px;
+  }
+  .h5Alicorn{
+    color:  #232329;
+    margin-top: 0.25em;
+    margin-left: 5px;
+  }
+  .hrAlicorn { 
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: solid;
+      border-width: 1px;
+      border-color:#FD8F26;
+  }
+
+
+
+  /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f2f4f7; 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: ##f2f4f7; 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #696C74;
+      box-shadow: #696C74;
+  }
+</style>
+<head>
+  <title>Branded App Dashboard Insert</title>
+</head>
+
+<div class="bodyAlicorn">
+<h3 class="internaluse">    Alicorn MBO Admin Extension - Version: 1.0.0.0 -- INTERNAL USE ONLY</h3>
+
+<div class="settingsRow tbutton" id="Site">
+  <div class="settingsColumn">
+      <ul class="ulAlicorn">Support
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000009yO?srPos=3&srKp=ka0&lang=en_US"><button class="resourcebutton">Branded App Overview</button></a>        
+      </li>
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000007uW?srPos=6&srKp=ka0&lang=en_US"><button class="resourcebutton">App Settings</button></a>        
+      </li>
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000007uo?srPos=10&srKp=ka0&lang=en_US"><button class="resourcebutton">Flurry Analytics FAQ </button></a>        
+      </li>
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA00e000000TYeC?srPos=11&srKp=ka0&lang=en_US"><button class="resourcebutton">ODIN: How to get the customer the branded app support they need</button></a>        
+      </li>
+      <li>
+        <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000008R6?srPos=29&srKp=ka0&lang=en_US"><button class="resourcebutton">THOR: When to contact Branded Mobile App Coordinators</button></a>
+      </li>
+      </ul>
+      <h6></h6>     
+  </div>
+  <div class="settingsColumn">
+      <ul class="ulAlicorn">Features & Settings
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000007v8?srPos=21&srKp=ka0&lang=en_US"><button class="resourcebutton">Tab management</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000007ur?srPos=9&srKp=ka0&lang=en_US"><button class="resourcebutton">Managing promotions</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA00e000000GuVG?srPos=8&srKp=ka0&lang=en_US"><button class="resourcebutton">Selling contracts in the branded app FAQ</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000007vD?srPos=18&srKp=ka0&lang=en_US"><button class="resourcebutton">Perkville Setup</button></a>
+        </li>
+      </ul>    
+  </div>
+  <div class="settingsColumn">
+      <ul class="ulAlicorn"> Logins and App Updates
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000007vH?srPos=22&srKp=ka0&lang=en_US"><button class="resourcebutton">Client Login Issues</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000007vC?srPos=26&srKp=ka0&lang=en_US"><button class="resourcebutton">Colors and Logo Changes (App Redesign)</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA032000000bmRa?srPos=46&srKp=ka0&lang=en_US"><button class="resourcebutton">Ideas for promotional tabs</button></a>
+        </li>
+      </ul>
+  </div>
+  <div class="settingsColumn">
+      <ul class="ulAlicorn"> Additional Resources
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://mindbody.sharepoint.com/sites/PKEKnowledgeCenter"><button class="resourcebutton">LCSS Knowledge Center</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA00e000000TYeH?srPos=7&srKp=ka0&lang=en_US"><button class="resourcebutton">ODIN: Submitting a branded app cancellation</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA00e000000PP34?srPos=43&srKp=ka0&lang=en_US"><button class="resourcebutton">Thor: Branded App Manager Processes</button></a>
+        </li>
+        <li>
+          <a class="aAlicornLink" target="_blank"  href ="https://na62.salesforce.com/kA03200000008TI?srPos=34&srKp=ka0&lang=en_US"><button class="resourcebutton">Running a test credit card transaction Best Practices</button></a>
+        </li>
+      </ul>
+  </div>
+</div>
+</div>

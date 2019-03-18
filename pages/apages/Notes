@@ -1,0 +1,29 @@
+This folder will contain all of the Associated HTML files to be loaded when the extension identifies an appropriate page.
+
+Manager Tools:
+https://clients.mindbodyonline.com/managertools
+
+Services & Pricing:
+https://clients.mindbodyonline.com/servicesandpricing/
+
+Staff:
+https://clients.mindbodyonline.com/staff/manage
+
+Products:
+https://clients.mindbodyonline.com/asp/adm/adm_tlbx_prod.asp
+
+API Integrations:
+https://clients.mindbodyonline.com/staff/managecredentials
+
+Reports:
+https://clients.mindbodyonline.com/reportslandingpage/FavoriteReports
+
+Resource Conflicts Report:
+https://clients.mindbodyonline.com/ASP/adm/adm_rpt_rsrc_conflicts.ASP
+
+Branded Web Dashboard - .widgets-list
+https://manager.healcode.com/manager/
+https://manager.healcode.com/manager/widgets
+
+FitMetrix - [.fm-admin-row-db, ] - CURRENTLY COMMENTED OUT
+https://www.fitmetrix.io/Facility/Dashboard
