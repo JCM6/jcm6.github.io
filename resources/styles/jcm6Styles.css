@@ -1,12 +1,13 @@
-b {
+* {
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
     color: aliceblue;
+    background-color: black
 }
 
 a {
+    font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    color: orange;
+    color:crimson;
 }
 
 hr {
