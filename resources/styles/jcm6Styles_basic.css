@@ -1,0 +1,36 @@
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10pt;
+        background-color: white;
+        color: black;
+
+    }
+    
+    h6{
+        font-size: 8pt;
+    }
+
+    a {
+        text-decoration: none;
+        color:blue;
+    }
+
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        border-color: blue;
+        background-color: blue;
+    }
+    ul{
+        background-color: slategrey;
+    }
+    li{
+        display: block;
+        background-color: lightgray;
+    }
+
