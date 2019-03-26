@@ -33,9 +33,11 @@
         display: block;
         background-color: lightgray;
     }
-    .marker{
-        font-weight: bold;
-    }
     details summary::-webkit-details-marker {
         display: none;
+    }
+    summary{
+        color: blue;
+        border-color: red;
+        border: 2px;
     }

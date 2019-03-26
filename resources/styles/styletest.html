@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/resources/styles/jcm6Styles.css">
     <style>
-        * {
+    * {
         font-family: 'Courier New', Courier, monospace;
         font-size: 10pt;
         background-color: white;
@@ -42,9 +42,15 @@
         display: block;
         background-color: lightgray;
     }
-    .marker{
-        font-weight: bold;
+    details summary::-webkit-details-marker {
+        display: none;
     }
+    summary{
+        color: blue;
+        border-color: red;
+        border: 2px;
+    }
+
 </style>
 </head>
 <body>
@@ -57,6 +63,21 @@
         <ul>
             <li><div class="marker">[636849]</div>:[<a href="pages\bw_test\bw_test.html">pages\bw_test\bw_test.html</a>]<div><hr></div></li>
             <li><div class="marker">[636849]</div>:[<a href="pages\bw_test\bw_test.html">pages\bw_test\bw_test.html</a>]<div><hr></div></li>
+            <li>
+            <li>
+                    <details>
+                        <summary>
+                            <div>Schedule Widgets</div>
+                            <div><hr></div>
+
+                        </summary>
+                            <ul id="list0">
+                                    <li><div class="marker">[636849]</div>:[<a href="pages\bw_test\bw_test.html">pages\bw_test\bw_test.html</a>]<div><hr></div></li>
+                                    <li><div class="marker">[636849]</div>:[<a href="pages\bw_test\bw_test.html">pages\bw_test\bw_test.html</a>]<div><hr></div></li>
+                            </ul>
+                    </details>
+            </li>
+            </li>
         </ul>
     </div>
 </body>
