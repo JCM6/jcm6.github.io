@@ -36,3 +36,8 @@
     .marker{
         font-weight: bold;
     }
+    details summary::-webkit-details-marker {
+        background: red;
+        color: blue
+        font-size: 500%;
+    }
