@@ -42,14 +42,27 @@
         display: block;
         background-color: lightgray;
     }
-    details summary::-webkit-details-marker {
+    details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+    summary {
+        font-weight: bold;
+        margin: -.5em -.5em 0;
+        padding: .5em;
+    }
+    ::-webkit-details-marker {
         display: none;
     }
-    summary{
-        color: blue;
-        border-color: red;
-        border: 2px;
+    details[open] {
     }
+
+    details[open] summary {
+        border-bottom: 2px solid blue;
+    }
+
 
 </style>
 </head>
@@ -67,9 +80,7 @@
             <li>
                     <details>
                         <summary>
-                            <div>Schedule Widgets</div>
-                            <div><hr></div>
-
+                            <div>[Schedule Widgets]</div>
                         </summary>
                             <ul id="list0">
                                     <li><div class="marker">[636849]</div>:[<a href="pages\bw_test\bw_test.html">pages\bw_test\bw_test.html</a>]<div><hr></div></li>
