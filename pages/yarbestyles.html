@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>StyletestPageDeploy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        .simpleList{
+            list-style: none;
+        }
+    </style>
+</head>
+<script>
+    let switchState = true;
+    
+    function togEncodDet(){
+        if (switchState = true) {
+            document.getElementById("1").innerText = "Collapse";
+            switchState = false;
+            console.log('Details expanded successfully.');
+        } else {
+            document.getElementById("1").innerText = "Expand";
+            switchState = true;
+            console.log('Details expanded successfully.');
+        }
+    }
+</script>
+
+<body>
+        <div>Basic info is basic</div>
+        <details onclick="togEncodDet()" id="det">
+            <summary id="1">
+                Details
+            </summary>
+            Hey there is something here!
+        </details>
+    <script>
+    document.getElementById("1").innerText = "Expand";
+    </script>
+        
+</body>
+</html>
+<i class="fas fa-toggle-on"></i>
+<i class="fas fa-toggle-off"></i>
+
+
+
