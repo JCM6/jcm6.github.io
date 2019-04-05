@@ -7,8 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/resources/styles/jcm6Styles.css">
     <style>
+    :root{
+        --DBlue:#091126;
+        --MBlue:#16478E;
+        --Lblue:#5FA9F2;
+        --LGold:#FBC577;
+        --Skblue:#277df6;
+        --PRed:#F26A47;
+        --Sk2blue:#277df6;
+        --Sk3blue:#277df6;
+    }
     * {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Courier New', Courier, monospace, sans-serif;
         font-size: 10pt;
         background-color: white;
         color: black;
@@ -62,11 +72,41 @@
     details[open] summary {
         border-bottom: 2px solid blue;
     }
+    .varTest{
+        display: block;
+        color:var(--PRed);
+        background-color: var(--DBlue);
+    }
+    .varTest:hover{
+        color:var(--LGold);
+        background-color:var(--Skblue);
+    }
+    .varTestButton{
+        display: block;
+        color:var(--PRed);
+        background-color: var(--DBlue);
+        width:100%;
+        border: 0px;
+        text-align: left;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    .varTestButton:hover{
+        color:var(--LGold);
+        background-color:var(--Skblue);
+    }
+
+    
 
 
 </style>
 </head>
 <body>
+    <script>
+        function divSelect(parms) {
+            window.open("C:\\Users\\jeffrey.moody\\Documents\\GitHub\\jcm6.github.io\\resources\\styles\\styletest.html", "_blank");
+        }
+    </script>
     <div>
         <p>
             Registry of Branded Web Test Pages
@@ -91,6 +131,16 @@
             </li>
         </ul>
     </div>
+    <div class="varTest"><button class="varTestButton" onclick="divSelect()">testing out CSS variables.</button></div>
+    <div class="varTest"><button class="varTestButton" onclick="divSelect()">testing out CSS variables.</button></div>
+    <div class="varTest"><button class="varTestButton" onclick="divSelect()">testing out CSS variables.</button></div>
+    <div class="varTest"><button class="varTestButton" onclick="divSelect()">testing out CSS variables.</button></div>
+    <div class="varTest"><button class="varTestButton" onclick="divSelect()">testing out CSS variables.</button></div>
+    <p>The simple part of all this is that we are writing a browser script to control the creation of html lements and then writing another script to change the visual presentation of these elements. The last thing that we are currently doing is writing additional scripts that can be executed in order to dynamically modify the structure and behavior of the rendered document.</p>
+    <p>The game of Legacy. This worl  in which we live is a short lived one and has the force of a thousand hands and lives that have gone into the contiunuation of some form of existence</p>
+    <p>I dont think that this is something that we can ever truly undo. Even if the human race were to end right now in this moment. The trace elements of our presence and the remained of our being would still continue for a brief spell. The point is that it would be brief.</p>
+    <p>Writin like this is actually quite nice. Almost akin to writing on a typewriter</p>
+    <p>The formation of language through defined keystrokes help me to organize my thoughts without being too overwhelming.</p>
 </body>
 <div><embed src="12345.pdf" width="800px" height="2100px" />
 </div>
