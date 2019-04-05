@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="docTitle">javascriptTest</title>
+</head>
+<body>
+    <script>
+        function verifyDocTitle() {
+            var tField = document.getElementById("inputTitle").value;
+            document.getElementById("docTitle").innerText = tField;
+        }
+    </script>
+    <div><input id="inputTitle" value="tempTitle"><button id="updateTitleB" onclick="verifyDocTitle()">Update</button></div>
+</body>
+</html>
