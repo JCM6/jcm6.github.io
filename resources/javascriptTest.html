@@ -8,11 +8,27 @@
 </head>
 <body>
     <script>
-        function verifyDocTitle() {
+        function saveDoc(){
+            var textTyped = document.getElementById("docBody").value; 
             var tField = document.getElementById("inputTitle").value;
-            document.getElementById("docTitle").innerText = tField;
+            var emailTyped = document.getElementById("inputEmail").value;
+            console.log(tField);
+            console.log(textTyped);
+            console.log(emailTyped)
+            
+            document.getElementById("saveTitle").innerText = tField;
+            document.getElementById("docTitle").innerHTML = tField;
+            document.getElementById("docSave").innerText = textTyped;
+            document.getElementById("saveEmail").innerText = emailTyped
         }
     </script>
-    <div><input id="inputTitle" value="tempTitle"><button id="updateTitleB" onclick="verifyDocTitle()">Update</button></div>
+    <div><span>Document Title:</span><input id="inputTitle" value="tempTitle"><button id="updateTitleB" onclick="saveDoc()">Update</button></div>
+    <div>Email Address:<input type="email" name="emailAddress" id="inputEmail"></div>
+    <div><span>Document Body:</span></div>
+    <div><textarea id="docBody"></textarea></div>
+    <div>Document Title:<span id="saveTitle"></span></div>
+    <div>Email:<span id="saveEmail"></span></div>
+    <div>DocumentBody:</div>
+    <div id="docSave"></div>
 </body>
 </html>
