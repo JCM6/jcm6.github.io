@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title id="docTitle">javascriptTest</title>
-    <script>
-        class cronk {
-            
-            docLog(){
-                console.log("Lever has been pulled.");
-            };
+    <style id="rootStyles">
+        .test{
+            --cssVariable:90;
         };
-    </script>
+    </style>
 </head>
 <body>
     <script>
@@ -26,10 +23,25 @@
             
             document.getElementById("saveTitle").innerText = tField;
             document.getElementById("docTitle").innerHTML = tField;
-            document.getElementById("docSave").innerText = textTyped;
+            document.getElementById("docSave").innerHTML = textTyped;
             document.getElementById("saveEmail").innerText = emailTyped
-        }
+        };
+        function turnDark(){
+            var darkStyleBlockRoot = "*{font-family: 'Courier New', Courier, monospace;font-size: 9pt;background-color: black;color: white;}"
+            var buttonText = 'Toggle Dark Mode Off'
+            document.getElementById("DarkMode").innerText = buttonText;
+            document.getElementById("rootStyles").innerText = darkStyleBlockRoot;
+            document.getElementById("DarkMode").onclick = removeStyles;
+        };
+        function removeStyles(){
+            var cleanStyleBlockRooot = "*{}";
+            var buttonText2 = 'Toggle Dark Mode On';
+            document.getElementById("DarkMode").innerText = buttonText2;
+            document.getElementById("rootStyles").innerText = cleanStyleBlockRooot;
+            document.getElementById("DarkMode").onclick = turnDark;
+        };
     </script>
+    <button id="DarkMode" onclick="turnDark()">Toggle Dark Mode On</button>
     <div><span>Document Title:</span><input id="inputTitle" value="tempTitle"><button id="updateTitleB" onclick="saveDoc()">Update</button></div>
     <div>Email Address:<input type="email" name="emailAddress" id="inputEmail"></div>
     <div><span>Document Body:</span></div>
@@ -40,6 +52,6 @@
     <div>Email:<span id="saveEmail"></span></div>
     <div>DocumentBody:</div>
     <div id="docSave"></div>
-    <div><button onclick="cronk.docLog()">Pull the lever!</button></div>
+
 </body>
 </html>
