@@ -42,9 +42,15 @@
         };
         function pulledLever(){
             var newBtn = document.createElement("button");
-            new
-            document.getElementById().appendChild(newBtn)
-        }
+            newBtn.innerHTML = "Needs Moar Button";
+            newBtn.className = "buttonDepotButton";
+            newBtn.value = "";
+            document.getElementById("buttonDepot").appendChild(newBtn);
+        };
+        function removeAllButtons(){
+            var elem = document.getElementsByClassName("buttonDepotButton");
+            document.getElementById("removalButton").innerHTML = elem;
+        };
     </script>
     <button id="DarkMode" onclick="turnDark()">Toggle Dark Mode On</button>
     <div><span>Document Title:</span><input id="inputTitle" value="tempTitle"><button id="updateTitleB" onclick="saveDoc()">Update</button></div>
@@ -58,6 +64,7 @@
     <div>DocumentBody:</div>
     <div id="docSave"></div>
     <button id="theLever" onclick="pulledLever()">DeadlyLever</button>
-    <div id="buttonDepot">Exponential button creator:</div>
-</body>
+    <div id="buttonDepot">Exponential button Depot</div>
+    <button onclick="removeAllButtons()" id="removalButton">Remove New Buttons</button>        
+    </body>
 </html>
