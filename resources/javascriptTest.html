@@ -14,6 +14,7 @@
 <body>
     <script>
         function saveDoc(){
+            //populates form values as document text.
             var textTyped = document.getElementById("docBody").value; 
             var tField = document.getElementById("inputTitle").value;
             var emailTyped = document.getElementById("inputEmail").value;
@@ -27,6 +28,7 @@
             document.getElementById("saveEmail").innerText = emailTyped
         };
         function turnDark(){
+            //turns on darkmode styling by inserting style text into the style element.
             var darkStyleBlockRoot = "*{font-family: 'Courier New', Courier, monospace;font-size: 9pt;background-color: black;color: white;}"
             var buttonText = 'Toggle Dark Mode Off'
             document.getElementById("DarkMode").innerText = buttonText;
@@ -34,6 +36,7 @@
             document.getElementById("DarkMode").onclick = removeStyles;
         };
         function removeStyles(){
+            //Removes all styling when the dark mode button is clicked again.
             var cleanStyleBlockRooot = "*{}";
             var buttonText2 = 'Toggle Dark Mode On';
             document.getElementById("DarkMode").innerText = buttonText2;
@@ -41,6 +44,7 @@
             document.getElementById("DarkMode").onclick = turnDark;
         };
         function pulledLever(){
+            //creates a new button each time the lever button is clicked
             var newBtn = document.createElement("button");
             newBtn.innerHTML = "Needs Moar Button";
             newBtn.className = "buttonDepotButton";
@@ -48,8 +52,14 @@
             document.getElementById("buttonDepot").appendChild(newBtn);
         };
         function removeAllButtons(){
-            var elem = document.getElementsByClassName("buttonDepotButton");
-            document.getElementById("removalButton").innerHTML = elem;
+            //get our parent element and our child elements stored in variables.
+            var parentElem = document.getElementById("buttonDepot");
+            var childElem = document.getElementsByClassName("buttonDepotButton");
+            
+            //removes all of the buttons added by looping through the array of stored buttons in the buttonDepot element.
+            while(childElem.length > 0){
+                childElem[0].parentElement.removeChild(childElem[0]);
+            };
         };
     </script>
     <button id="DarkMode" onclick="turnDark()">Toggle Dark Mode On</button>
