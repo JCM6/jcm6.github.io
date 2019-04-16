@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>conflip</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/resources/styles/jcm6Styles.css'>
+    <script id="mainScript">
+        
+        function conflip(){
+            function flip() {
+                return Math.floor((Math.random() * 2) + 1);                
+            }
+            var result = flip();
+            if (result === 1){
+                document.getElementById("coin").src="images/heads.jpg";
+                winner = 'HEADS';
+                head_win = heads_wins.push(result);
+            } else if (result === 2) {
+                document.getElementById("coin").src="images/tails.jpg";
+                winner = 'TAILS';
+                tail_win = '${tails_wins.push(result)}';
+                document.getElementById("tail_win").innerText = tail_win;
+            }
+            document.getElementById("winner").innerText = winner;
+        }
+    
+    </script>
+</head>
+<body>
+    <div><h3>Coin Flip Page</h3></div>
+    <div id="flippage"></div>
+    <div id="musica">
+        <iframe width="100%" height="70" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200209694&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
+</body>
+</html>
