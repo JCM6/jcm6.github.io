@@ -61,6 +61,21 @@
                 childElem[0].parentElement.removeChild(childElem[0]);
             };
         };
+        function crankLever(){
+            var crankAmount = document.getElementById("crankAmount").value;
+            var redBtn = document.createElement("button");
+            redBtn.innerHTML = "Ah yes the red button.";
+            redBtn.className = "redButton";
+            redBtn.value = "";
+
+            while(i < crankAmount){
+               var i = 0;
+               var parent = document.getElementById("buttonDepot");
+               parent.appendChild("redBtn");
+               i++;
+            };
+
+        }
     </script>
     <button id="DarkMode" onclick="turnDark()">Toggle Dark Mode On</button>
     <div><span>Document Title:</span><input id="inputTitle" value="tempTitle"><button id="updateTitleB" onclick="saveDoc()">Update</button></div>
@@ -73,7 +88,9 @@
     <div>Email:<span id="saveEmail"></span></div>
     <div>DocumentBody:</div>
     <div id="docSave"></div>
-    <button id="theLever" onclick="pulledLever()">DeadlyLever</button>
+    <button id="theLever" onclick="pulledLever()">LessDeadlyLever</button>
+    <button id="redLever" onclick="crankLever()">Big Red Lever</button>
+    <input id="crankAmount" value="5" type="number">
     <div id="buttonDepot">Exponential button Depot</div>
     <button onclick="removeAllButtons()" id="removalButton">Remove New Buttons</button>        
     </body>
