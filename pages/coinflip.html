@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/resources/styles/jcm6Styles.css'>
     <script id="mainScript">
         
-        function conflip(){
+        function conflip0(){
             function flip() {
                 return Math.floor((Math.random() * 2) + 1);                
             }
@@ -25,14 +25,32 @@
             }
             document.getElementById("winner").innerText = winner;
         }
+
+        // FFDE the Founding Father Descision Engine
+        function FFDE (){
+            var coinRand = Math.random();
+            var coinState = Math.round(coinRand);
+            var flipResult = document.getElementById("result");
+
+            console.log("Coin is:" + coinState);
+            if (coinState > 0){
+                console.log("Heads Wins!");
+                flipResult.innerText = 'Heads';
+            } else {
+                console.log("Tails Wins");
+                flipResult.innerText = 'Tails';
+            };
+        };
+
     
     </script>
 </head>
 <body>
     <div><h3>Coin Flip Page</h3></div>
-    <div id="flippage"></div>
-    <div id="musica">
+    <div id="flippage"><button id="coin" onclick="FFDE()">Flip the coin</button></div>
+    <div id="result">Flip Results will show up here!</div>
+<!--     <div id="musica">
         <iframe width="100%" height="70" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200209694&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    </div>
+    </div> -->
 </body>
 </html>
