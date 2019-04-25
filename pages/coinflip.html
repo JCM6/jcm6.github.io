@@ -7,6 +7,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/resources/styles/jcm6Styles.css'>
     <script id="mainScript">
+
+
+
+
         // FFDE the Founding Father Decision Engine
         function FFDE (){
             var coinRand = Math.random();
@@ -14,6 +18,12 @@
             var flipResult = document.getElementById("result");
             var scoreParent = document.getElementById("score")
             var statS = ('Coin random:' + coinRand + ' || ' + 'Coin Result:' + coinState);
+
+            //Store tails variables
+            var headsWinsR = document.getElementById(headsScore).value;
+            var tailsWinsR = document.getElementById(tailsScore).value;
+            var headsWinT = parseInt(headsWinsR, 10);
+            var tailsWinT = parseInt(tailsWinsR, 10);
 
             document.getElementById("coinStats").innerHTML = statS
             
@@ -26,11 +36,13 @@
             console.log("Coin is:" + coinState);
             if (coinState > 0){
                 console.log("Heads Wins!");
-                flipResult.innerHTML = 'Heads';
+                flipResult.innerHTML = 'Result:Heads';
             } else {
                 console.log("Tails Wins");
-                flipResult.innerHTML = 'Tails';
+                flipResult.innerHTML = 'Result:Tails';
             };
+
+
         };
     </script>
 </head>
@@ -43,7 +55,7 @@
     <div id="result">Flip Results will show up here!</div>
     <hr>
     <details id="scoreContainer">
-        <summary id="scoreHeader">Recorded Scores:</summary>
+        <summary id="scoreHeader">Recorded Scores: <span id="recordedScore">Heads Tally <input id="headsScore" value="0">|| Tails Tally <input id="tailsScore" value="0"></span></summary>
         <div id="score"></div>
     </details>
 
