@@ -20,12 +20,15 @@
             var statS = ('Coin random:' + coinRand + ' || ' + 'Coin Result:' + coinState);
 
             //Store tails variables
-            var headsWinsR = document.getElementById(headsScore).value;
-            var tailsWinsR = document.getElementById(tailsScore).value;
-            var headsWinT = parseInt(headsWinsR, 10);
-            var tailsWinT = parseInt(tailsWinsR, 10);
+            var headsWinsR = document.getElementById("headsScore").value;
+            var tailsWinsR = document.getElementById("tailsScore").value;
+            var headsWin = parseInt(headsWinsR, 10);
+            var tailsWin = parseInt(tailsWinsR, 10);
+            var scoreParent = document.getElementById("score")
 
-            document.getElementById("coinStats").innerHTML = statS
+
+
+            document.getElementById("coinStats").innerHTML = statS;
             
            var scoreS = document.createElement("DIV");
 
@@ -37,11 +40,12 @@
             if (coinState > 0){
                 console.log("Heads Wins!");
                 flipResult.innerHTML = 'Result:Heads';
+                headsWin.value = (headsWinsR + 1);
             } else {
                 console.log("Tails Wins");
                 flipResult.innerHTML = 'Result:Tails';
+                tailsWin.value = (tailsWinsR + 1);
             };
-
 
         };
     </script>
