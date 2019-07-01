@@ -18,13 +18,18 @@
             var flipResult = document.getElementById("result");
             //var scoreParent = document.getElementById("score")
             var statS = ('Coin random:' + coinRand + ' || ' + 'Coin Result:' + coinState);
+            var imageElement = document.getElementById('imageResult');
+            var headsImagePath = 'jcm6.github.io/resources/images/heads.png';
+            var tailsImagePath = 'jcm6.github.io/resources/images/tails.png';
+
+
 
             //Store tails variables
             var headsWinsR = document.getElementById("headsScore").value;
             var tailsWinsR = document.getElementById("tailsScore").value;
             var headsWin = parseInt(headsWinsR, 10);
             var tailsWin = parseInt(tailsWinsR, 10);
-            var scoreParent = document.getElementById("score")
+            var scoreParent = document.getElementById("score");
 
 
 
@@ -35,16 +40,21 @@
             scoreS.innerHTML = statS;
 
             scoreParent.appendChild(scoreS);
-
+            
+            //Update Results and Image based on coinState
             console.log("Coin is:" + coinState);
             if (coinState > 0){
                 console.log("Heads Wins!");
                 flipResult.innerHTML = 'Result:Heads';
                 headsWin.value = (headsWinsR + 1);
+                imageElement.setAttribute("src", headsImagePath);
+                imageElement.setAttribute("name", "heads");
             } else {
                 console.log("Tails Wins");
                 flipResult.innerHTML = 'Result:Tails';
                 tailsWin.value = (tailsWinsR + 1);
+                imageElement.setAttribute("src", tailsImagePath);
+                imageElement.setAttribute("name", "tails");
             };
 
         };
@@ -53,6 +63,9 @@
 <body>
     <div><h3>Coin Flip Page</h3></div>
     <div id="flippage"><button id="coin" onclick="FFDE()">Flip the coin</button></div>
+    <div>
+        <image src='jcm6.github.io/resources/images/heads.png' id="imageResult" name=""></image>
+    </div>
     <hr>
     <div id="coinStats"></div>
     <hr>
@@ -65,9 +78,6 @@
         <div><hr></div>
     </details>
 
-    <!--<div id="musica">
-        <iframe width="100%" height="70" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200209694&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    </div> -->
-    
+
 </body>
 </html>
