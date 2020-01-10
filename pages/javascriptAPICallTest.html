@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <title>javascriptAPICallTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+     function testCall(urlIn) {
+        var cardsString = "https://api.scryfall.com/cards?page=3";
+        var responseField = document.getElementById("responseField");
+        var responseHeader = document.getElementById("responseHeader");
+       
+        if (urlIn = "cards"){
+            urlIn=cardsString;
+        } 
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+             if(this.readyState == 4 && this.status ==200){
+                parsedResponse = JSON.parse(this.responseText);
+                stringyResponse = JSON.stringify(parsedResponse, null, '\t');
+                responseField.innerText = stringyResponse;
+                responseHeader.innerText = 'Response Field:[Response Successful]';
+                console.log(stringyResponse);
+             }
+             else {
+                responseHeader.innerText = 'Response Field:[Response unsuccessful]';
+             }
+         };
+        xhttp.open('GET', urlIn, true);
+        xhttp.setRequestHeader('Content-type', 'application/json');
+        xhttp.send();
+     }
+    </script>
+    <style> 
+        button{
+            background-color: blue !important;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Enter your card search terms.
+    </div>
+    <div id="searchFieldContainer">
+        <br>Name<input type="checkbox" name="Name">
+        <br>Search Field: <input id="searchField" type="text">
+    </div>
+    <div>
+        <button type="submit" onclick='testCall("cards")'>GET /cards :: https://api.scryfall.com/cards?page=3</button>
+    </div>
+    <details open>
+        <summary id="responseHeader">Response Field:</summary>
+        <div id="responseField"></div>
+    </details>
+</body>
+</html>
